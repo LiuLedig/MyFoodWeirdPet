@@ -1,0 +1,94 @@
+< html >
+
+< cabeça >
+	< meta  http-equiv = " Acesso-Controle-Permitir-Origem "  content = " * " >
+	< meta  http-equiv = " tipo de  conteúdo " content = " text / html; conjunto de caracteres = UTF-8 " />
+	< meta  name = " viewport "  content = " largura = largura do dispositivo, escala inicial = 1, escala máxima = 1,0 " />
+	< meta  name = " google-signin-client_id "  content = " XXXXXXXXXXXXXXX.apps.googleusercontent.com " >
+	< title > :: APP BASICÃO :: </ title >
+
+	< link  href = " https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css "  rel = " stylesheet " >
+	< script  src = " https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js " > </ script >
+	< link  href = " https://fonts.googleapis.com/icon?family=Material+Icons "  rel = " stylesheet " >
+
+	< script  src = " /static/js/facebook.js " > </ script >
+	< script  async  adiar  crossorigin = " anônimo "  src = " https://connect.facebook.net/pt_BR/sdk.js " > </ script >
+	< script  src = " /static/js/googlelogin.js " > </ script >
+	< script  src = " https://apis.google.com/js/platform.js?onload=renderButton "  assíncrono  defer > </ script >
+	< script  src = " https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX "  async  defer > </ script >
+
+	< script  src = " /static/js/application.js " > </ script >
+	< script  src = " /static/js/form.js " > </ script >
+	< script  src = " /static/js/map.js " > </ script >
+	< style >
+		@import  url ( " /static/css/main.css " );
+	</ style >
+</ head >
+
+< body >
+	< div  class = " background " >
+		< section  id = " header " >
+			< nav >
+				< div  class = " nav-wrapper " >
+					< a  href = " # "  data-target = " mobile-demo "  class = " sidenav-trigger " >
+						< div  class = " NavbarToggle " >
+							< div  class = " ToggleOne " > </ div >
+							< div  class = " ToggleTwo " > </ div >
+							< div  class = " ToggleThree " > </ div >
+						</ div >
+					</ a >
+				</ div >
+			</ nav >
+			< ul  class = " sidenav "  id = " mobile-demo " >
+				< Li > < a  href = " javascript: void (0) "  onclick = " showLoginPage () " > < i  class = " MATERIAL-ícones " > home </ i > & nbsp ; Início </ a > </ li >
+				< Li > < a  href = " javascript: void (0) "  onclick = " showMapPage () " > < i  class = " MATERIAL-ícones " > mapa </ i > & nbsp ; Mapa </ a > </ li >
+				< Li > < a  href = " javascript: void (0) "  onclick = " ShowFormPage () " > < i  class = " MATERIAL-ícones " > atribuição </ i > & nbsp ; Cadastro </ a > </ li >
+			</ ul >
+		</ section >
+
+		< section  id = " loginPage " >
+			< center >
+				<br /> < br /> < br />
+				< img  src = " /static/logoapp.png "  largura = " 200 "  alt = " Logotipo do aplicativo " />
+				< Br /> < br /> < br />
+
+				< div  id = " fb-root " > </ div >
+				< div  class = " fb-login-button "  data-size = " grande "  data-button-type = " login_com "
+					data-auto-logout-link = " verdadeiro "  data-use-continue-as = " false "
+					scope = " public_profile, email "  onlogin = " checkLoginState (); " > </ div >
+
+				< br /> < br />
+				< div  id = " google-signin2 " > </ div >
+			</ center >
+		</ section >
+
+		< section  id = " mapPage "  style = " display : nenhum ; " >
+			< center >
+				< h1 > Mapa </ h1 > </ center >
+				< div  id = " map " > </ div >
+				< Br />
+			< div  id = " listFormDiv "  style = " margem : 20 px ; " > </ div >
+		</ section >
+
+		< section  id = " formPage "  style = " display : nenhum ; " >
+			<center >
+				< h1 > Cadastro </ h1 > </ center >
+			< div  id = " userfield "  style = " margin : 30 px ; " >
+				Usuário: < b > Não Logado </ b >
+			</div >
+			< div  style = " margin : 30 px ; " >
+				< label  for = " feedbackmessageTextArea " > < b > Envie seus comentários, sugestões ou sugestões: </ b > </ label >
+				< textarea  id = " feedbackmessageTextArea " > </ textarea >
+			</div >
+			< div  style = " margin : 30 px ; " >
+				< label  for = " contactField " > < b > Informação de contato: </ b > </ label >
+				< input  id = " contactField "  type = " text " >
+			</ div >
+			< div >
+				< center > < button  type = " button "  nome = " ação "  onclick = " saveForm (); " > Salvar </ button > </ center >
+			</ div >
+		</ section >
+
+	</ div >
+</ body >
+</ html >

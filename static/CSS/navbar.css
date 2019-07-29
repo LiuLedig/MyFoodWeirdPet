@@ -1,0 +1,36 @@
+nav {
+    cor : #fff ;
+    cor de fundo : transparente ;
+    / * largura: 100%; * /
+     altura : 0 px ;
+     altura da linha : 0 px ;
+     display : bloco  ! importante ;
+}
+
+
+@media  only  screen  e ( min-width : 993 px ) {
+	nav  a .sidenav-trigger {
+    	display : bloco  ! importante ;
+	}
+}
+
+
+.NavbarToggle {
+  largura : 32 px ;
+  altura : 30 px ;
+  índice z : 999 ;
+}
+
+.ToggleOne ,
+.ToggleTwo ,
+.ToggleThree {
+  altura : 3 px ;
+  raio de fronteira : 5 px ;
+  margem : auto de 6 px  ;
+  largura : 100 % ;
+  backface-visibility : oculto ;
+  -webkit-transição-duração : 0,5 s ;
+  duração da transição : 0,5 s ;
+  cor de fundo : branco ;
+
+}

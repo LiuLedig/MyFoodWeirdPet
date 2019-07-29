@@ -1,0 +1,29 @@
+@import  url ( " navbar.css " );
+
+
+corpo {
+	altura : 100 % ;
+}
+
+label {
+    tamanho da fonte : 1 rem  ! important ;
+    cor : rgba ( 0 , 0 , 0 , 0,87 ) ! importante ;
+}
+
+.background {
+	fundo : rgba ( 158 , 158 , 158 , 0,5 );
+	fundo : gradiente linear -moz ( 75 graus , rgba ( 250 , 250 , 250 , 1 ) 0 % , rgba ( 158 , 158 , 158 , 0,5 ) 100 % );
+	fundo : -webkit-gradiente ( fundo esquerdo  , topo direito , cor-stop ( 0 % , rgba ( 250 , 250 , 250 , 1 )), cor-stop ( 100 % , rgba ( 158 , 158 , 158 , 0,5 )) ); 
+	fundo : - gradiente linear de cumarga ( 75 graus , rgba ( 250 , 250 , 250 , 1 ) 0 % , rgba ( 158 , 158 , 158 , 0,5 ) 100 % );
+	fundo : gradiente linear -o ( 75 graus , rgba ( 250 , 250 , 250 , 1 ) 0 % , rgba ( 158 , 158 , 158 , 0,5 ) 100 % );
+	fundo : gradiente linear -m ( 75 graus , rgba ( 250 , 250 , 250 , 1 ) 0 % , rgba ( 158 , 158 , 158 , 0,5 ) 100 % );
+	/ * filter: progid: DXImageTransform.Microsoft.gradient (startColorstr = '# 009244', endColorstr = '# 003e7b', GradientType = 1); * /
+	fundo : -gradiente linear ( 75 ° C , rgba ( 250 , 250 , 250 , 1 ) 0 % , rgba ( 158 , 158 , 158 , 0,5 ) 100 % );
+    imagem de fundo : -gradiente linear ( 76 ° C , RGB ( 250 , 250 , 250 ) 0 % , rgba ( 158 , 158 , 158 , 0,5 ) 100 % );
+    min-height : 100 vh ;
+    estouro : auto ;
+}
+
+#map {
+    altura : 200 ;
+}
