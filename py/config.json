@@ -1,0 +1,5 @@
+{
+    " dburi " : " mongodb+srv://LiuLedig:<Tipa1fifo>@cluster0-irjip.mongodb.net/test?retryWrites=true&w=majority " ,
+    " fbclientId " : " XXXXXXXXXX " ,
+    " fbclientSecret " : " XXXXXXXXXXXX "   
+}

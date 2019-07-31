@@ -3,12 +3,12 @@ função  saveForm () {
 	var contato =  documento . getElementById ( " contactField " ). valor ;
 
 	var url =  " / saveForm? " 
-				+  " contato = "  +  encodeURIComponent (contato)
-				+  " & message = "  +  encodeURIComponent (message)
+				+  " & Nome = "  +  encodeURIComponent (nome)
+				+  " & Contato = "  +  encodeURIComponent (contato)
 				+  " & login = "  + login
 				+  " & userid = "  + userid
-				+  " & latitude = "  + latitude
-        		+  " & longitude = "  + longitude	
+				+  " & E-mail = "  + e-mail
+        		+  " & Especie = "  + especie	
 				+  " & token = "  + token;
 
 	fetch (url, {método :  ' POST ' })
